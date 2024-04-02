@@ -1,0 +1,47 @@
+#subirTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;  
+    border-radius: 10px;
+}
+
+.fa-chevron-up{
+    animation: zoom 1s linear infinite;
+}
+
+@keyframes zoom{
+    25%{
+        transform: translateY(3px);
+    }
+    75%{
+        transform: translateY(-3px);
+    }
+
+}
+
+
+#subirTopo:hover {
+    opacity: .9;
+}
+
+
+@media screen and (max-width: 600px) {
+    #subirTopo{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        bottom: 50px;
+    }
+
+}
+
+

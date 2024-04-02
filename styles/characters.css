@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.characters{
+  padding: 30px 20px 0px 20px;
+  position: relative;
+}
+
+.characters h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 10px;
+  padding-bottom: 0px;
+}
+
+
+.CSSgal {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+   
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+  height: 100%;
+  /* height: 600px; */
+  white-space: nowrap;
+  font-size: 0;
+  transition: 0.8s ease;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+  font-size: 1rem;
+  display: inline-block;
+  white-space: normal;
+  /* vertical-align: top; */
+
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  /* background-color: chartreuse; */
+}
+
+.CSSgal .prevNext > div+div {
+  visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+  /* background: #fff; */
+  position: absolute;
+  /* width:       60px;
+  height:      60px; */
+  line-height: 60px; /* If you want to place numbers */
+  text-align: center;
+  opacity: 1;
+  font-size: 30px;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+}
+.CSSgal .prevNext a:hover {
+ 
+  opacity: 0.7;
+}
+.CSSgal .prevNext a+a {
+  left: auto;
+  right: 20px;
+}
+
+/* NAVIGATION */
+
+
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+/* .CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s5:target ~ .bullets >*:nth-child(5) {background: rgba(255, 255, 255,   1);} */
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s5:target ~ .prevNext >*:nth-child(5) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s5:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-400%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+  /* color: #fff;   */
+  /* color: rgba(0,0,0,0.8); */
+  /* text-align: center; */
+  /* background-color: aquamarine; */
+ 
+}
+
+#s1, #s2, #s3, #s4,#s5{
+  position: absolute;
+  top:-200px;
+}
+
+
+
+
+.CSSgal .slider h2 {
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  word-spacing: 0.2em;
+  font-size: 3em;
+}
+
+.CSSgal a {
+  border-radius: 50%;
+  margin: 0 3px;
+ 
+}
+
+.content-chatacters{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    flex-direction: row;
+    height: 100%;
+}
+
+.content-chatacters-txt{
+    position: relative;
+    width: 50%;
+    align-self: center;
+    margin-top: -20px;
+    font-size: 18px;
+}
+
+.content-chatacters .content-chatacters-txt h2{
+    font-weight: 500 ;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+
+.content-chatacters .content-chatacters-txt p{
+    margin-top: 10px;
+}
+
+.content-chatacters-img{
+    position: relative;
+    width: 300px;
+    height: 368px;
+    align-self: end;
+    margin-left: -70px;
+    user-select: none;
+    
+}
+
+#ft{
+    width: 340px;
+    height: 380px;
+
+}
+
+.content-chatacters-img img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 3px 4px #000);
+    transition: 1s;
+}
+
+
+.content-chatacters-img img:hover{
+  
+  filter: opacity(.7);
+}
+
+.square22{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 300px;
+  height: 300px;
+  border: 20px solid #c0bdbd;
+  transform: rotate(250deg);
+  z-index: -999;
+  animation: spin 20s infinite;
+  
+}
+
+.square1{
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 260px;
+  height: 260px;
+  border: 20px solid #c0bdbd;
+  transform: rotate(250deg);
+  z-index: -999;
+  animation: spin 20s infinite;
+  
+}
+
+@keyframes spin {
+  to{
+    transform: rotate(250deg);
+  }
+  from{
+    transform: rotate(350deg);
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+     
+  .CSSgal .prevNext a {
+    left: 10px;
+    
+  }
+    
+  .CSSgal .prevNext a+a {
+    right: 10px;
+    
+  }
+
+    
+  .characters{
+    
+    padding: 50px 20px 0px 20px;
+
+  }
+
+  .characters h1{
+    padding-bottom: 20px;
+  }
+
+
+  .CSSgal {
+    height: 400px;
+    padding: 0;
+    
+  }
+
+  .content-chatacters{
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 100px;
+  }
+
+    
+  .content-chatacters-txt{
+    position: relative;
+    width: 80%;
+    height: 60%;
+    padding: 0;
+    font-size: 15px;
+    align-self: start;
+    margin-top: 5%;
+  }
+
+    
+  .content-chatacters-img{
+    width: 220px;
+    height: 268px;
+    align-self: end;
+    margin-left: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    bottom: 0;
+  }
+
+    
+  #ft{
+    width: 280px;
+    height: 320px;
+
+  }
+
+
+  .content-chatacters .content-chatacters-txt h2{
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 900px){
+
+  
+  .characters{
+    padding: 50px 0px 0px 0px;
+
+  }
+
+
+  .content-chatacters{
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 80px;
+  }
+
+  .content-chatacters-img{ 
+    width: 260px;
+    height: 300px;
+  }
+    
+  .content-chatacters .content-chatacters-txt h2{   
+    padding-bottom: 0px;
+  }
+
+
+  #ft{
+    margin-left: 0px;
+    width: 320px;
+    height: 320px;
+
+  }
+
+
+  #s1, #s2, #s3, #s4, #s5{
+    position: absolute;
+    top: -250px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+
+  .characters{
+    padding: 50px 0px 0px 0px;
+  }
+
+    
+  .CSSgal .prevNext a {
+    left: 5px;
+  }
+
+  .CSSgal .prevNext a+a {
+    right: 5px;
+    
+  }
+
+  .CSSgal {
+    width: 100%;
+    height: 670px;
+    max-height: max-content;
+    padding: 0;
+  }
+
+  .content-chatacters{
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .content-chatacters-txt{
+    align-self: center;
+    width: 90%;
+    text-align: justify;
+    text-align: left;
+    padding-bottom: 0px;
+  }
+
+  .content-chatacters-img{
+    margin-top: 10px;
+    top: 10px;
+    width: 250px;
+    height: 300px;
+    align-self: center;
+    justify-content: end;
+    margin-left: 0px;
+
+  }
+
+  .characters h1{
+    font-size: 30px;
+  }
+
+  
+  #ft{
+    width: 300px;
+    height: 450px;
+  }
+
+  .content-chatacters-txt h2{
+    text-align: left;
+  }
+
+  .content-chatacters-txt p{
+    font-size: 15px;
+  }
+
+  
+  #s1, #s2, #s3, #s4, #s5{
+    position: absolute;
+    top: -120px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 500px){
+   
+  #s1, #s2, #s3, #s4,#s5{
+    position: absolute;
+    top: -120px;
+  }
+
+
+  .CSSgal {
+    height: 650px;
+    min-height: max-content;
+    padding: 0px;
+  }
+    
+  .characters h1{
+    font-size: 30px;
+  }
+
+    
+  .CSSgal .prevNext a {
+    font-size: 25px;
+  }
+    
+
+  .content-chatacters{
+    position:relative;
+    padding: 0px 45px;
+  }
+
+  .content-chatacters-txt{
+
+    position: relative;
+    width: 100%;
+    height: 50%;
+  }
+
+  .content-chatacters-txt h2{
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  
+  .content-chatacters-txt p{
+    font-size: 14px;
+  }
+
+  #ft{
+    width: 280px;
+    height: 330px;
+  }
+
+
+
+  .content-chatacters-img{
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .CSSgal .prevNext a {
+    left: 5px;
+  }
+
+
+  .CSSgal .prevNext a+a {
+    right: 5px;
+  }
+  
+
+}
+
+
+
+@media screen and (max-width: 400px){
+
+  
+  .content-chatacters{
+    position:relative;
+    padding: 0px 35px;
+  }
+
+  .characters h1{
+    font-size: 25px;
+  }
+
+  .content-chatacters-txt{
+    line-height: 1.3em;
+  }
+  
+  .content-chatacters-txt h2{
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .CSSgal .slider h2 {
+    font-weight: 600;
+    letter-spacing: -0.06em;
+    word-spacing: 0.1em;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+  }
+
+  .CSSgal .prevNext a {
+    font-size: 20px;
+    left: 10px; 
+  }
+
+
+  .CSSgal .prevNext a+a {
+    left: auto;
+    right: 10px;
+  }
+
+  .content-chatacters-img{  
+    width: 220px;
+    height: 350px;
+    margin-top: 20px;
+    align-self: center;
+  }
+
+    
+  #s1, #s2, #s3, #s4, #s5{
+    position: absolute;
+    top: -80px;
+  }
+
+
+
+  
+}

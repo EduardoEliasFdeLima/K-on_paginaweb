@@ -1,0 +1,241 @@
+
+.GenerosSubgeneros{
+    position: relative;
+    width: 100%;
+    padding: 50px 120px;
+    text-align: center;
+}
+
+.GenerosSubgeneros h1{
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-transform: uppercase;  
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: calc(33% - 10px);
+    height: 220px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    transition: .5s ease-in;
+}
+
+.card:hover{
+    opacity: .7;
+    border-radius: 10px 50px 10px 10px;
+    background-color: #986F4F;
+    color: #fff;
+}
+
+.card i{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.ii{
+    padding-bottom: 10px;
+}
+
+
+.card:hover i{
+    animation: floating 1s;
+}
+
+@keyframes floating {
+    50%{
+        transform: rotate(18deg);
+    }
+
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+
+@keyframes fadeborder{
+    50%{
+        border: 1px solid #707070;
+    }
+
+    100%{
+         border: 0px solid #707070;
+    }
+}
+
+.card p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.card h4{
+    float: right;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    font-size: 25px;
+   
+}
+
+
+@media screen and (max-width: 1200px) {
+        
+    .row{
+        width: 100%;
+        display: flex;
+        justify-content: initial;
+        align-items: center;       
+        flex-wrap: wrap;
+    }
+
+    .card{
+        min-height: 250px;
+    }
+
+        
+    .card i{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+        
+    .card h4{ 
+        font-size: 22px;
+    }
+
+    .GenerosSubgeneros{
+        padding: 50px 100px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .card{
+        min-height: 200px;
+    }
+
+    .card i{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+        
+    .card{
+        margin: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 20px;       
+    }        
+
+    .card p{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 900px){
+
+    .GenerosSubgeneros{
+      padding: 50px 60px;
+    }
+
+        
+    .GenerosSubgeneros h1{
+        font-size: 40px;
+        padding-bottom: 40px;
+        text-transform: uppercase;  
+    }
+
+    .card{
+        min-height: 230px;
+    }
+
+    .card h4:nth-child(1){       
+        font-size: 18px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .GenerosSubgeneros h1{
+        font-size: 30px;
+    
+    }
+
+    .GenerosSubgeneros{ 
+        padding: 50px 40px;
+    }
+
+    .card{
+        width: calc(50% - 10px);
+        min-height: none;
+        height: 110px;
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px){
+    .GenerosSubgeneros{
+        padding: 50px 30px;
+    }
+
+    .row{
+        justify-content: center;
+    }
+
+    .card{
+        width: calc(100% - 10px);
+        min-height: 160px; 
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    .card{
+        width: calc(100% - 10px);
+        min-height: 160px; 
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+
+
+    .card h4:nth-child(1){   
+        font-size: 20px;
+    }
+
+    
+    .GenerosSubgeneros h1{
+        font-size: 1.5em;
+    }
+
+
+}

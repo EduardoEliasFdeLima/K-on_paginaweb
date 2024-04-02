@@ -1,0 +1,406 @@
+.ovalBG{
+    width: 100%;
+    height: 100vh; 
+    background-image: url('https://i.imgur.com/nwt5T6Y.jpeg');
+    background-repeat: repeat;
+    background-position: center; 
+    background-size: cover;
+    border-radius: 0 0px 0% 50%;
+}
+
+
+.ovalBG h1{
+    position: absolute;
+    top: 30%;
+    left: 120px;
+    width: 40%;
+    color: #fff;
+    z-index: 2;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700 bold;
+    line-height: 80px;
+    text-shadow: #000 2px 4px ;
+
+}
+
+.menuTop{
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+}
+
+.menuTop img{
+    user-select: none;
+    width: 100px;
+    height: 50px;
+    margin-top: -5px;
+}
+
+.menuTop .txtsmenus ul{
+    display: inline;
+}
+
+.menuTop ul li{
+    display: inline;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.menuTop ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400 bold;
+
+}
+
+
+.seti{
+    text-align: left;
+    padding: 0 120px;
+}
+
+.seti i{
+    position: absolute;
+    bottom: 10%;
+    font-size: 40px;
+    transition: 2s;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%{
+       bottom: 10%;
+    }
+
+    100%{
+        bottom: 8%
+    }
+}
+
+
+
+
+@keyframes blink {
+    50%{
+        transform: rotate(-5deg) translate(2px);
+        
+    }
+
+    100%{
+        transform: rotate(-5deg) translate(-2px);
+    }
+}
+
+.menu-mobile{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.menu-mobile i{
+    cursor: pointer;
+    transition: .5s;
+}
+
+#menu_lateral{
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+#musicfundo{
+    display: none;
+}
+
+.txtsmenus li a:hover{
+    text-decoration: underline;
+}
+
+.menu-mobile i:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1200px){
+
+        
+    .menuTop{
+        padding: 10px 90px;
+    }
+
+    .ovalBG h1{
+        position: absolute;
+        bottom: 30%;
+        left: 90px;
+        width: 40%;
+        font-size: 3rem;
+        line-height: 60px;
+
+    }
+
+        
+    .seti{
+        padding: 0 90px;
+    }
+
+        
+    .seti i{
+        font-size: 40px;
+      
+    }
+
+        
+    @keyframes bounce {
+        0%{
+            bottom: 8%;
+        }
+
+        100%{
+            bottom: 6%
+        }
+    }
+
+
+        
+    .menuTop ul li{
+        margin-left: 20px;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    
+        
+    .menuTop img{
+        width: 80px;
+        height: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+    .ovalBG{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        text-align: left;
+        border-radius: 0 0px 0% 40%;
+    }
+
+    .ovalBG h1{
+        bottom: 30%;
+        left: 70px;
+        width: 40%;
+        font-size: 3rem;
+        line-height: 55px;
+    }
+
+
+    .seti{
+        padding: 0 70px;
+    }
+
+        
+    .seti i{
+        font-size: 30px;
+    }
+
+
+
+        
+    .menuTop{
+        padding: 10px 70px;
+    }
+
+    .txtsmenus{
+        background-color: rgba(152,111,79, .7);
+        color: #fff;
+        position: fixed;
+        padding: 50px 30px;
+        top: 0;
+        right: -100%;
+        height: max-content;
+        z-index: 3;
+        transition: .7s ease;
+        border-left: 2px solid #000;
+        border-bottom: 2px solid #000;;
+        text-align: center;
+        border-radius: 0 0px 0px 20px;
+       
+    }
+
+    .active-menu{
+        right: 0;
+    }
+
+    .menuTop ul li{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 0px;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;    
+    }
+
+        
+    .menu-mobile{
+        color: #fff;
+        z-index: 5;
+    }
+
+    #menu_lateral{
+        display: block;
+    }
+
+
+    .menuTop ul li a{
+        font-size: 15px;
+    }
+
+    .menuTop ul li i{
+        border: 1px solid #000;
+        padding: 7px;
+        border-radius: 5px;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px){
+ 
+    .menuTop{
+        padding: 10px 50px;
+    }
+
+    .seti{
+        padding: 0 50px;
+    }
+
+    .ovalBG{
+        background-image: url('https://i.imgur.com/wFcq5tQ.jpeg');
+    }
+ 
+    .ovalBG h1{
+        bottom: 30%;
+        left: 50px;
+        width: 40%;
+    }
+
+         
+    @keyframes bounce {
+        0%{
+            bottom: 6%;
+        }
+
+        100%{
+            bottom: 4%
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .ovalBG{
+        background-image: url('https://i.imgur.com/053GoTp.jpeg');
+        border-radius: 0 0px 0% 40%;
+    }
+    
+    .ovalBG h1{ 
+        top: 70%;
+        left: 30%;
+        width: 60%;
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .menuTop{      
+        padding: 10px 30px;
+    }
+
+    .txtsmenus{
+        padding: 100px 20px;
+        top: 0;
+        right: -100%;
+        text-align: center;
+    }
+
+    .menuTop ul li a{
+        font-size: 13px;
+    }
+
+    .menuTop ul li i{
+        border: 1px solid #000;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    .seti{
+        padding: 0 20px;
+    }
+
+    .menuTop img{
+        width: 60px;
+        height: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .ovalBG{
+        border-radius: 0 0px 0% 45%;
+    }
+
+    .ovalBG h1{ 
+        color: #fff;
+        top: 70%;
+        left: 30%;
+        width: 70%;
+        font-size: 1.7rem;
+        line-height: 40px;
+    }
+
+
+}
+
+
+
+#musicfundo{
+    display: none;
+}
+
+
+
+.fa-volume-low{
+    transition: 1s ease;
+}
+
+.fa-volume-xmark{
+    transition: 1s ease;
+}
+
+.active-menu{
+    right: 0;
+}

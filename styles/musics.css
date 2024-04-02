@@ -1,0 +1,380 @@
+
+#musics{
+    padding: 60px 120px;
+    position: relative;
+    z-index: 0;
+}
+
+#musics h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.containimgs{
+    margin-top: 100px;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 400px;
+    gap: 60px;
+}
+
+.boximage{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.boximage img{
+    user-select: none   ;
+}
+
+
+.boximage .main_image{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    transition: .4s;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.boximage .main_image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#imgg1:hover{
+    /* filter: grayscale(.5); */
+    transform: rotate(-3deg);
+}
+
+
+
+.boximage .second_image{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 40%;
+    top: -10px;
+    z-index: -1;
+    transform: rotate(5deg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 2s;
+    border: 3px solid #fff;
+
+}
+
+.boximage .second_image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.boxtext{
+    width: 55%;
+    position: relative;
+    height: 350px;
+}
+
+.boxtext h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.boxtext p{
+    padding-bottom: 20px;
+}
+
+.containlinks{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.containlinks a{
+    padding: 10px;
+    border: 3px solid #986F4F;
+    text-decoration: none;
+    color: #986F4F;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+
+.containlinks a:hover{
+    background-color: #986F4F;
+    color: #fff;
+
+}
+
+#iconbg{
+    font-size: 100px;
+    opacity: .2;
+    color: #707070;
+    position: absolute;
+    z-index: -3;
+    bottom: 30px;
+    right: 40px;
+    transform: rotate(35deg);
+}
+
+@media screen and (max-width: 1250px) {
+        
+    .boxtext h3{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .boxtext p{
+        padding-bottom: 10px;
+    }
+
+        
+    .containlinks{
+        position: relative;
+       
+    }
+
+
+    .boximage{
+        position: relative;
+        width: 380px;
+        height: 380px;
+    }
+
+        
+    .boximage .second_image{
+        width: 230px;
+        height: 230px;
+    }
+
+        
+    .boximage .main_image{
+        width: 330px;
+        height: 330px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+
+
+    #musics{
+        padding: 150px 80px;
+        
+    }
+    
+    .containimgs{
+        margin-top: 100px; 
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: max-content;
+        gap: 10px;
+      
+    }
+
+        
+    .boxtext{
+        width: 100%;
+        position: relative;
+        height: 350px;
+        margin-top: 40px;
+    }
+
+
+
+    .boximage .second_image{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 35%;
+        top: -40px;
+        z-index: -1;
+        overflow: hidden;
+    }
+        
+    .boximage{
+        position: relative;
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .containlinks{
+        position: relative;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .containimgs{
+        margin-top: 70px;
+    }
+
+
+    
+    #musics{
+        padding: 70px 50px;
+    }
+
+    #musics h1{
+        font-size: 30px;
+    }
+        
+    .boxtext h3{
+        font-size: 25px;
+        padding-bottom: 17px;
+    }
+
+    .boximage{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boximage .second_image{
+        width: 200px;
+        height: 200px;
+    }
+
+        
+    .boximage .main_image{
+        width: 300px;
+        height: 300px;
+    }
+
+    
+    .boximage .second_image{
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 35%;
+        top: -40px;
+    }
+        
+
+}
+
+
+@media screen and (max-width: 500px){
+
+          
+    .containimgs{
+        margin-top: 50px;
+    }
+
+
+    #musics{
+        padding: 70px 40px;
+        overflow: hidden;
+    }
+        
+    #musics h1{
+        font-size: 27px;
+        
+    }
+
+
+    .boxtext{
+        height: max-content;
+    }
+
+    .boxtext p{
+        font-size: 15px;
+    }
+
+       
+    .boximage .second_image{
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        left: 35%;
+        top: -30px;
+    
+    }
+
+        
+    .containlinks a{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 400px){
+
+    .containimgs{
+        margin-top: 70px;
+        
+    }
+
+    
+    #musics{
+        padding: 70px 35px;
+        overflow: hidden;
+    }
+
+    #musics h1{
+      font-size: 22px;
+      padding-bottom: 0px;
+    }   
+
+    .boxtext h3{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    .boxtext p{
+        font-size: 14px;
+    }
+
+    .containlinks a{
+        font-size: 12px;
+    }
+
+    .boximage .second_image{
+        width: 170px;
+        height: 170px;  
+        left: 45%;
+        top: -30px;
+    }
+
+        
+    .boximage .main_image{
+        width: 250px;
+        height: 250px;
+    }
+
+}

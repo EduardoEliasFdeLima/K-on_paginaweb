@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>K-on!</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    
+    <script src="script/menulateral.js"></script>
+    <link rel="stylesheet" href="styles/characters.css">
+
+   
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/guia.css">
+    <link rel="stylesheet" href="styles/generos.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/musics.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="script/music.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>  
+   
+</head>
+<body>
+    
+    
+
+    <header>
+        <div class="menuTop">
+            <div class="imgmenu">
+                <img src="src/images/logo.png" alt="">
+            </div>
+
+                <ul class="txtsmenus" id="gg">
+                    <li><a href="#about" class="txt_menu_lateral">Sobre</a></li>
+                    <li><a href="#guia" class="txt_menu_lateral" >Guia</a></li>
+                    <li><a href="#characters" class="txt_menu_lateral">Personagens</a></li>
+                    <li><a href="#generos" class="txt_menu_lateral">Gêneros</a></li>
+                    <li><a href="#musics" class="txt_menu_lateral">Músicas</a></li>
+                    
+                </ul>
+
+
+                <div class="menu-mobile">
+                    <i class="bx bx-moon" id="ld"></i>
+                    <i class="fa-solid fa-volume-xmark" id="ms"></i>
+                    <i class="fa-solid fa-bars" id="menu_lateral"></i>
+                  
+                </div>
+         
+        </div>
+
+        <div class="ovalBG"> 
+            <h1 id="titu">K-ON! A obra prima do Slice of Life MOE.</h1>
+        </div>
+
+
+        <div class="seti">
+            <a href="#about"><i class="fa-solid fa-angles-down ll"></i></a>
+           
+        </div>
+        
+    </header>
+
+
+
+    <audio src="src/audio/01 - Have some tea.mp3" id="musicfundo" controls loop></audio>
+
+
+
+    <main>
+        <section class="about light" id="about">
+            <div class="content">
+                <div class="txts">
+                    <h1>K-ON!</h1>
+                    <p>K-ON! é um anime estreado em 2009, animado pelo estúdio Kyoto Animation e dirigido por Naoko Yamada. Criado pelo Autor Kakifly, a obra original apresenta 6 volumes, sendo apenas os 4 primeiros adaptados em anime e os 2 últimos sendo considerados 'extras' sobre o que acontece depois. A obra é considerada por muitos o precursor do subgênero MOE devido ao seu grande sucesso e qualidade.</p>
+                    <!-- <button><a href="">Assistir <i class="fa-solid fa-tv"></i></a></button> -->
+                </div>
+                <div class="imgAbout">
+                    <img id="abtimg" src="src/images/yui.png" alt="">
+                    <div class="backimage"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+       
+            <section class="guia light2" id="guia">
+                <h1>Guia de temporadas</h1>
+                <div class="content2">
+                    <nav class="nav_tabs">
+                        <ul>
+                            <li>
+                                <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
+                                <label for="tab1" class="btns_color active-btn-0" onclick="Colorir(0)" id="tb1">1ºTP</label>
+                                <div class="ctt">
+                                        <div class="imgTXT">
+                                            <div class="imgBack2">
+                                                <img src="src/images/00.jpg" alt="">
+                                            </div>
+                                            <div class="txtguia">
+                                                <h1>K-ON!</h1>
+                                                <h3>13 Episódios (24min)</h3>
+                                                <h4>Sinopse:</h4>
+                                                <p>Um novo ano de ensino médio sempre significa muito por vir, e uma dessas coisas é ingressar em um clube. Estando em um dilema sobre qual clube se juntar, Yui Hirasawa se depara e se candidata ao Clube de música clube, que ela interpreta erroneamente como tocando instrumentos simples, como castanholas. Incapaz de tocar um instrumento, ela decide visitar para pedir desculpas e sair.</p>
+                                                <p>Enquanto isso, o Keionbu enfrenta a dissolução devido à falta de membros. Isso faz com que os membros do clube ofereçam qualquer coisa, desde comida até relaxar durante o horário do clube, a fim de convencer Yui a se juntar. Apesar de seus esforços, Yui insiste em sair devido à sua falta de experiência musical. Como último recurso, elas tocam uma peça para Yui, que desperta sua paixão ardente e finalmente a convence a se juntar ao clube.</p>
+                                                <p>A partir de então, é simplesmente brincar enquanto praticam. Os membros do Light Music Club estão prontos para tornar seu tempo juntos um prazer!</p>
+                                                <h5>fonte: myanimelist</h5>
+                                            </div>
+                                        </div>
+                                </div>
+        
+                            </li>
+                            <li>
+                            <input type="radio" name="tabs" class="rd_tabs" id="tab2">
+                            <label for="tab2" class="btns_color" onclick="Colorir(1)" id="tb2">OVA 1</label>
+                            <div class="ctt">
+                                <div class="imgTXT">
+                                    <div class="imgBack2">
+                                        <img src="src/images/OVA1.jpg" alt="">
+                                    </div>
+                                    <div class="txtguia">
+                                        <h1>K-ON!: Live house!</h1>
+                                        <h3>1 Episódio (24min)</h3>
+                                        <h4>Sinopse:</h4>
+                                        <p>Estamos quase no final do ano, e a Houkago Tea Time foi convidada para participar de uma casa de shows na véspera de Ano Novo! Os membros icônicos da banda são Yui Hirasawa, a guitarrista despreocupada e entusiasmada por tocar música; Mio Akiyama, a baixista tímida que se envergonha facilmente; Tsumugi Kotobuki, a tecladista gentil e doce que encontra alegria em atividades normais; Ritsu Tainaka, a baterista extrovertido que gosta de provocar Mio; e Azusa Nakano, a guitarrista base que é um ano mais novo que os demais, mas um pouco mais maduro.</p>
+                                        <p>Tocar no set dá às meninas a rara oportunidade de conhecer várias pessoas de diferentes bandas, incluindo aquela que as convidou, Love Crysis. O Houkago Tea Time será capaz de encantar seu público com sucesso?</p>
+                                        <h5>fonte: myanimelist</h5>
+                                    </div>
+                                </div>
+                                </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="tabs" class="rd_tabs" id="tab3">
+                            <label for="tab3" class="btns_color" onclick="Colorir(2)" id="tb3">2ºTP</label>
+                            <div class="ctt">
+                                <div class="imgTXT">
+                                    <div class="imgBack2">
+                                        <img src="src/images/00-CapaPasta.jpg" alt="">
+                                    </div>
+                                    <div class="txtguia">
+                                        <h1>K-ON!!</h1>
+                                        <h3>26 Episódios (24min)</h3>
+                                        <h4>Sinopse:</h4>
+                                        <p>É o ano novo, o que significa que os membros veteranos do clube de música leve são agora do terceiro ano, sendo Azusa Nakano a único do segundo ano. As veteranas logo percebem que Azusa será a único membro que restará quando se formarem e com isso decididem recrutar novos membros. Apesar de tentar muitos métodos para atrair calouros - distribuindo panfletos, trazendo pessoas para a sala do clube e se apresentando na cerimônia de boas-vindas - não há sinais de alguém que pretenda participar.</p>
+                                        <p>Enquanto se dirige para a sala do clube, Azusa ouve Yui Hirasawa dizer que o clube está bem com apenas cinco pessoas e que elas podem fazer muitas coisas divertidas juntas. Mudando de ideia, ela decide que elas não precisam recrutar nenhum membro por enquanto.</p>
+                                        <p>K-On!! gira em torno das participantes do clube de Música leve enquanto elas experimentam sua vida diária no ensino médio. De ensaiar para shows a apenas brincar, elas estão prontos para tornar seu último ano juntos em emocionante!</p>
+                                        <h5>fonte: myanimelist</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="tabs" class="rd_tabs" id="tab4">
+                            <label for="tab4" class="btns_color" onclick="Colorir(3)" id="tb4">OVA 2</label>
+                            <div class="ctt">
+                                
+                                <div class="imgTXT">
+                                    <div class="imgBack2">
+                                        <img src="src/images/OVA2.jpg" alt="">
+                                    </div>
+                                    <div class="txtguia">
+                                        <h1>K-ON!!: Keikaku!</h1>
+                                        <h3>1 Episódio (24min)</h3>
+                                        <h4>Sinopse:</h4>
+                                        <p>As férias de verão estão chegando ao fim, mas as meninas do Houkago Tea Time querem fazer mais uma viagem antes do início do próximo semestre. Com inúmeros destinos de viagem para escolher e tantas preferências quantos os membros do clube, chegar a um acordo parece distante.</p>
+                                        <p>Incapaz de chegar a uma decisão, eles lembram que devem primeiro solicitar novos passaportes. Por mais simples que possa parecer, a visita de rotina a um escritório do governo e o preenchimento de um formulário logo se transformam em uma aventura de um dia inteiro para Yui Hirasawa e o resto da banda.</p>
+                                        <h5>fonte:myanimelist</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li>
+                            <input type="radio" name="tabs" class="rd_tabs" id="tab5">
+                            <label for="tab5" class="btns_color" onclick="Colorir(4)" id="tb5">Filme</label>
+                            <div class="ctt">
+                                
+                                <div class="imgTXT">
+                                    <div class="imgBack2">
+                                        <img src="src/images/FIlme.jpg" alt="">
+                                    </div>
+                                    <div class="txtguia">
+                                        <h1>K-ON! Movie</h1>
+                                        <h3>Filme (1h50min)</h3>
+                                        <h4>Sinopse:</h4>
+                                        <p>A formatura se aproxima dos membros fundadores do Light Music Club. Com apenas algumas preciosas semanas de escola, as meninas decidem aproveitar ao máximo e planejar uma viagem ao exterior. Havaí, Nova York, Dubai – muitos destinos são sugeridos, mas depois de uma pequena ajuda da preciosa tartaruga de estimação do clube, Ton-chan, Londres é escolhida como anfitriã de sua próxima desventura!</p>
+                                        <p>Yui Hirasawa, Mio Akiyama, Tsumugi Kotobuki, Ritsu Tainaka e Azusa Nakano visitarão marcos famosos, apresentarão música ao vivo para os londrinos e comerão todo tipo de comida deliciosa, tudo isso enquanto cambaleando desajeitadamente de um lugar para outro. Mas a diversão não vai durar para sempre, pois canções sinceras e despedidas serão feitas quando seus dias de escola juntos chegarem ao fim. Uma coisa é certa, porém: as amizades inegáveis que essas garotas formaram é algo que continuará por muito tempo após a cena final.</p>
+                                        <h5>fonte:myanimelist</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="characters light" id="characters">
+                <h1>Personagens</h1>
+                
+                
+                <div class="CSSgal">
+                   
+
+                    <s id="s1"></s> 
+                    <s id="s2"></s>
+                    <s id="s3"></s>
+                    <s id="s4"></s>
+                    <s id="s5"></s>
+    
+                    
+                
+                    <div class="slider">
+                       
+                        <div>
+                            <div class="content-chatacters">
+                                <div class="content-chatacters-txt">
+                                    <h2>Yui Hirasawa</h2>
+                                    <p>Yui é a guitarrista principal e vocalista de K-on, conhecida por sua guitarra elétrica "gita". Antes de aprender guitarra, só tocava castanholas. Apesar das notas baixas, estuda bem às vezes, mas é desastrada e facilmente distraída por coisas fofas. Adora doces e tem uma irmã mais nova chamada Ui.</p>
+                                    <p>Apesar das distrações, esforça-se para melhorar na guitarra e apresenta-se com energia e alegria contagiante.</p>
+                                </div>
+                                <div class="content-chatacters-img" id="ft">
+                                    <img src="src/images/yui-kon.png" alt="">
+                                    <div class="square2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            
+                            <div class="content-chatacters">
+                                
+                                <div class="content-chatacters-txt">
+                                    <h2>Ritsu Tainaka</h2>
+                                    <p>Ritsu é a autoproclamada presidente do clube de música leve e toca bateria. Alegre e sarcástica, ela traz ideias engajadoras para o clube. Apesar de preferir bateria por achá-la "legal", tem dificuldade com instrumentos que exigem movimentos intricados dos dedos.</p>
+                                    <p>Amiga de infância de<a href="#s3" class="ll">Mio</a>, gosta de provocá-la e fica com ciúmes de seus amigos, chegando a espioná-la. Ela também possui um irmão mais novo chamado Satoshi que aparece algumas vezes no anime.</p>
+                                </div>
+                                <div class="content-chatacters-img">
+                                    <!-- <img src="C:\Users\edueu\Downloads\ritsu-kon.png" alt=""> -->
+                                    <img src="src/images/ritsu-new.png" alt="">
+                                    <div class="square"></div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <div >
+                            <div class="content-chatacters">
+                                <div class="content-chatacters-txt">
+                                    <h2>Mio Akiyama</h2>
+                                    <p>Mio é uma garota tímida que toca baixo no clube K-on. Originalmente planejava se juntar ao clube literário, mas foi persuadida por<a href="#s2" class="ll">Ritsu</a>, sua amiga de infância e presidente do clube de música. Ela tem excelentes notas e é madura, exceto quando assustada por histórias de terror. </p>
+                                    <p>Teme ser o centro das atenções e é alvo de provocações de<a href="#s2" class="ll">Ritsu</a> e Sawako, a conselheira do clube. Escolheu o baixo para evitar destaque na banda. Mais técnica, é procurada por<a href="#s1" class="ll">Yui</a> para tutoriais de guitarra.</p>
+                                    
+                                </div>
+                                <div class="content-chatacters-img">
+                                    <img src="src/images/mio.png" alt="">
+                                    <div class="square"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-chatacters">
+                                <div class="content-chatacters-txt">
+                                    <h2>Tsumugi Kotobuki</h2>
+                                    <p>Tsumugi, conhecida como "Mugi", é uma garota rica e gentil que toca teclado. Inicialmente interessada no clube de coral, ingressa no clube de música leve após o convite de<a href="#s3" class="ll">Mio</a> e<a href="#s2" class="ll">Ritsu</a>. Filha de um presidente de empresa, sua família possui várias propriedades no Japão e uma na Finlândia. </p>
+                                    <p>Apesar da riqueza, desfruta de atividades comuns como fast food e empregos de meio período. Possui força extraordinária e contribui para o clube com doces e chás diligentemente preparados.</p>
+                                </div>
+                                <div class="content-chatacters-img">
+                                    <img src="src/images/mugi.png" alt="">
+                                    <div class="square"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="content-chatacters">
+                                <div class="content-chatacters-txt">
+                                    <h2>Azusa Nakano</h2>
+                                    <p>Azusa é uma nova aluna no clube de música leve, sendo a guitarrista rítmica. Autoproclamada iniciante, toca guitarra desde a quarta série, vinda de uma família musical. Seu comportamento é misterioso e ela fica perplexa com os eventos de chá e cosplay do clube, preferindo praticar. </p>
+                                    <p>Tem uma fraqueza por bolos e é facilmente acalmada, embora seja mais séria que as outras meninas e tenha dificuldade em expressar seus sentimentos. Apelidada de Azu-nyan após experimentar orelhas de gato, ela é constantemente abraçada por <a href="#s1" class="ll">Yui</a>.</p>
+                                </div>
+                                <div class="content-chatacters-img">
+                                    <img src="src/images/azusa.png" alt="">
+                                    <div class="square"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="prevNext">
+                        <div><a href="#s5"><i class="fa-solid fa-chevron-left ll"></i></a><a href="#s2"><i class="fa-solid fa-chevron-right ll"></i></a></div>
+                        <div><a href="#s1"><i class="fa-solid fa-chevron-left ll"></i></a><a href="#s3"><i class="fa-solid fa-chevron-right ll"></i></a></div>
+                        <div><a href="#s2"><i class="fa-solid fa-chevron-left ll"></i></a><a href="#s4"><i class="fa-solid fa-chevron-right ll"></i></a></div>
+                        <div><a href="#s3"><i class="fa-solid fa-chevron-left ll"></i></a><a href="#s5"><i class="fa-solid fa-chevron-right ll"></i></a></div>
+                        <div><a href="#s4"><i class="fa-solid fa-chevron-left ll"></i></a><a href="#s1"><i class="fa-solid fa-chevron-right ll"></i></a></div> 
+                    </div>
+                </div>
+        
+            </section>
+
+
+
+            <Section class="GenerosSubgeneros light2" id="generos">
+                <h1>Gêneros e temas</h1>
+                <div class="row">
+                    <div class="card light" id="card1">
+                        <h4>Slice of Life</h4>
+                        <i class="fa-solid fa-bread-slice"></i>
+                        <p>Slice of Life (Fatia de Vida) é um gênero de anime que aborda o cotidiano, a vida diária para o entretenimento.</p>
+                    </div>
+                    <div class="card light" id="card2">
+                        <i class="fa-regular fa-face-laugh"></i>
+                        <h4>Comédia</h4>
+                        <p>Comédia é um gênero de humor que tem como objetivo divertir e provocar o riso da audiência.</p>
+                    </div>
+                    <div class="card light" id="card3">
+                        <i class="fa-solid fa-guitar"></i>
+                        <h4>Musical</h4>
+                        <p>Musical é um tema no qual músicas, danças, coreografia ou canções são predonimantes na narrativa da história.</p>
+                    </div>
+                    <div class="card light" id="card4">
+                        <i class='bx bxs-school'></i>
+                        <h4>Escolar</h4>
+                        <p>Escolar é um tema que a escola é predominante ou exclusiva para a história, sendo um ambiente que influência na narrativa.</p>
+                    </div>
+                    <div class="card light" id="card5">
+                        <i class="fa-solid fa-ice-cream"></i>
+                        <h4>MOE</h4>
+                        <p>Moe é uma gíria que se refere a um tema de garotas fazendo coisas fofas ou sendo fofas, a tradução é algo como "fofo" ou "adorável".</p>
+                    </div>
+                </div>
+            </Section>
+
+
+
+
+            <section class="light" id="musics">
+                <h1>Músicas e trilha sonora</h1>
+                <div class="containimgs">
+                    <div class="boximage">
+                        <img class="main_image" id="imgg1" src="https://i.imgur.com/Jdp3vuZ.jpeg" alt="">
+                        <img class="second_image" id="imgg2" src="https://i.imgur.com/2fgnAoq.jpeg" alt="">
+                    </div>
+                    <div class="boxtext">
+                        <h3>Hokago Tea Time </h3>
+                        <p>O que faz de K-on um anime tão rico e vivo em sua essência é pelo fato de que as aberturas e encerramentos do animes são cantadas e tocadas pelas próprias atrizes que interpretam vocalmente as personagens da banda. </p>
+                        <p>Abaixo se encontra os links das músicas produzidas pela banda Hokago Tea Time e a trilha sonora original do anime produzida pelo compositor Hajime Hyakkoku. No botão esquerdo e direito respectivamente.</p>
+        
+                        <div class="containlinks">
+                            <a href="https://open.spotify.com/intl-pt/album/2Vovb0iu4c35MP7EGgjdCN" onmouseover="change(2)" target="_blank">Trilha sonora <i class="fa-brands fa-spotify"></i></a>
+                            <a href="https://open.spotify.com/intl-pt/artist/1cXxia1Q2VDTjWe8X2Jydm/discography/all" onmouseover="change(1)" target="_blank">Músicas HTT <i class="fa-brands fa-spotify"></i></a>
+                        </div>
+        
+                    </div>
+                </div>
+                
+               
+            </section>
+    </main>
+
+    <a id="subirTopo" class="dark">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+
+
+    <footer>
+      <div class="final">
+            <div class="sqr light">
+                
+            </div>
+            <div class="txtfinals">
+                <p>&copy; Design e programação feitas por Eduardo Elias</p>
+                
+            </div>
+            <div class="icn">
+               <a href="https://www.linkedin.com/in/eduardo-elias-4008422b7/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+               <a href="https://github.com/EduardoEliasFdeLima" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+      </div>
+    </footer>
+
+  
+    <script src="script/animations.js" defer></script>
+
+    <script src="script/colorir.js"></script>
+    <script src="script/darklightmode.js"></script>
+    <script src="script/subir.js"></script>
+    <script src="script/chanceimg.js"></script>
+  
+
+</body>
+</html>

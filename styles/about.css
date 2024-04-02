@@ -1,0 +1,189 @@
+.about{
+    position: relative;
+    width: 100%;
+    padding: 150px 120px;
+    padding-bottom: 80px;
+}
+
+
+.about h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.about p{
+    font-size: 18px;
+}
+
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: max-content;
+}
+
+.txts{
+    width: 500px;
+    height: 300px;
+    margin-top: -150px;
+    padding-top: 20px;
+}
+
+
+.imgAbout{
+    width: 470px;
+    height: 270px;
+    border-radius: 10px;
+    background-color:#986F4F;
+    position: relative;
+    transform: rotate(-3deg);
+    z-index: 1;
+    user-select: none;
+}
+
+
+.imgAbout img{
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+    margin-left: -3%;
+    transform: rotate(3deg);
+    border-radius: 10px;
+    animation: shake 3s;
+  
+}
+
+.imgAbout img:hover{
+    transform: rotate(5deg);
+}
+
+.content button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #986F4F;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.content button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@keyframes shake{
+    50%{
+        transform: rotate(5deg);
+    }
+
+}
+
+
+@media screen and (max-width: 1250px){
+    .content{
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .txts{
+        width: 100%;
+    }
+
+    .imgAbout{
+        margin-top: 10px;
+    }   
+}
+
+
+
+@media screen and (max-width: 900px){
+    .about{
+        padding: 150px 80px;
+    }
+
+    .content{
+        flex-direction: column;
+        gap: 100px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 700px){
+    .about{
+        padding: 200px 20px;
+    }
+
+    .txts{
+        width: 90%;        
+    }
+
+    .about h1{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+        
+    .about p{
+        font-size: 15px;
+    }
+    .content{
+        gap: 0px;
+    }
+  
+    
+    .imgAbout{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+
+
+@media screen and (max-width: 500px){
+
+    .about{
+        padding: 10px 20px 50px 20px;
+    }
+
+   
+    .txts{
+        margin-top: 0px;   
+    }
+
+        
+    .content{
+        position: relative;
+        margin-top: 10%;
+    }
+
+        
+    .imgAbout{
+        position: relative;
+        margin-top: 50px;
+    }
+    
+}
+
+
+@media screen and (max-width: 400px){
+
+    .about {
+        padding: 40px 20px;
+    }
+    .imgAbout{
+        position: relative;
+        margin-top: 100px;
+    }
+    
+}
