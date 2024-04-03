@@ -64,8 +64,24 @@ body ::selection{
 }
 
 
+
 .about p, .content2 p, .content-chatacters-txt p, .card p, .boxtext p, .txtfinals p{
     font-family: "Rubik", sans-serif;
     font-style: normal;
-    line-height: 1.7em;
+    line-height: 1.6em;
+}
+
+@media screen and (max-width: 400px){
+    .content-chatacters-txt p{
+        line-height: 1.4em;
+    }
+
+    
+
+    .content2 p, .content-chatacters-txt p, .card p, .boxtext p, .txtfinals p{
+        font-family: "Rubik", sans-serif;
+        font-style: normal;
+        line-height: 1.4em;
+    }
+    
 }
