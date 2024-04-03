@@ -382,6 +382,22 @@
         line-height: 40px;
     }
 
+      
+    .seti i{
+        bottom: 7%;
+        font-size: 25px;
+    }
+
+    @keyframes bounce {
+        0%{
+            bottom: 5%;
+        }
+
+        100%{
+            bottom: 3%
+        }
+    }
+
 
 }
 
