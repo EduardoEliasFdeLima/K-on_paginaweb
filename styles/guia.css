@@ -338,7 +338,7 @@
 @media screen and (max-width: 600px){
 
     .guia{
-        padding: 100px 20px;
+        padding: 80px 20px;
     }
         
     .guia h1{
@@ -379,6 +379,10 @@
 
 @media screen and (max-width: 450px){
 
+    .guia{
+        padding: 80px 20px;
+    }
+    
     .imgBack2{
         width: 140px;
         height: 200px;
