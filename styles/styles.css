@@ -28,6 +28,11 @@ body ::selection{
 .light{
     /* background-color: #fbfbfb; */
     background-color: #FAFAFA;
+    /* color: #707070; */
+    color: #606060;
+}
+
+.light p, .light a{
     color: #707070;
 }
 
@@ -41,19 +46,33 @@ body ::selection{
 
 .dark{
     background-color: #1a1818;
-    color: #fff;
+    color: #f1f1f1;
+}
+
+.dark p, .dark a{
+    color: #cccccc;
 }
 
 .light2{
-    /* background-color: #f1f1f1;
-    background-color: #f0f0f0; */
     background-color: #EDF1F5;
+    /* color: #707070; */
+    color: #606060;
+}
+
+.light2 p, .light2 a{
     color: #707070;
 }
 
+
+
+
 .dark2{
     background-color: #242222;
-    color: #fff;
+    color: #f1f1f1;
+}
+
+.dark2 p, .dark2 a{
+    color: #cccccc;
 }
 
 .ll{
