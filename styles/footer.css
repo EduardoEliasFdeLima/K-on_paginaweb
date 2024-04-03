@@ -3,8 +3,7 @@ footer{
     margin: 0;
     padding: 10px;
     width: 100%;
-    background-color: #986F4F;
-    color: #fff;
+    background-color: #e7e7e7;
     display: flex;
     justify-content: center;
     position: relative;
@@ -14,7 +13,6 @@ footer{
 
 footer a{
     text-decoration: none;
-    color: #fff;
 }
 
 
