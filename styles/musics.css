@@ -92,6 +92,7 @@
 
 .boxtext p{
     padding-bottom: 20px;
+    font-size: 18px;
 }
 
 .containlinks{
@@ -112,6 +113,7 @@
     border-radius: 5px;
     font-weight: 500;
     transition: .5s ease;
+    text-transform: uppercase;
 }
 
 
@@ -141,6 +143,7 @@
 
     .boxtext p{
         padding-bottom: 10px;
+        font-size: 15px;
     }
 
         
@@ -242,6 +245,7 @@
     
     #musics{
         padding: 70px 50px;
+        padding-bottom: 100px;
     }
 
     #musics h1{
@@ -251,6 +255,10 @@
     .boxtext h3{
         font-size: 25px;
         padding-bottom: 17px;
+    }
+
+    .boxtext p{
+        font-size: 15px;
     }
 
     .boximage{
@@ -342,7 +350,8 @@
 
     
     #musics{
-        padding: 70px 35px;
+        padding: 60px 35px;
+        padding-bottom: 100px;
         overflow: hidden;
     }
 
