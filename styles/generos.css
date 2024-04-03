@@ -35,8 +35,13 @@
 
 .card:hover{
     opacity: .7;
-    border-radius: 10px 50px 10px 10px;
-    background-color: #986F4F;
+    border-radius: 10px 30px 10px 10px;
+    background-color: #b68b69;
+    color: #fff;
+}
+
+
+.card:hover p{
     color: #fff;
 }
 
