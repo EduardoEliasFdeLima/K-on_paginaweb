@@ -1,0 +1,445 @@
+#mangas{
+    padding: 80px 100px 0px 100px ;
+}
+
+#mangas h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 40px;
+} 
+
+
+.contain{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;  
+    padding: 0px 20px;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.contain p{
+      padding-bottom: 20px;
+      font-size: 18px;
+}
+
+.leftcontain{
+    width: 65%;
+    margin-top: 10px;
+}
+
+.leftcontain p:nth-child(2){
+    padding-bottom: 20px;
+}
+
+.leftcontain span{
+    font-size: 14px;
+    opacity: .7;
+}
+
+.rightcontain{
+    position: relative;
+    display: block;
+    align-self: flex-end;
+}
+
+
+.rightcontain{
+    width: auto;
+    height: 350px;
+
+}
+
+.rightcontain img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    user-select: none;
+}
+
+
+.rightcontain:before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -150px;
+    left: -10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #707070;
+    opacity: .3;
+}
+
+
+.rightcontain:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+
+    background-color: #707070;
+    opacity: .3;
+
+}
+
+
+.btns{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    width: 580px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 0px;
+
+}
+
+.btns label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98px;
+    height: 100%;
+    cursor: pointer;
+    border-right: 1px solid #707070;
+    transition: opacity .4s;
+    user-select: none;
+    font-size: 16px;
+}
+
+
+#tlt{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.btns label:hover{
+   opacity: .6 ;       
+}
+
+
+.btns label:nth-child(1){
+    border-radius: 20px 0px 0px 20px;
+    background-color: #FF2423;
+    color: #fff;
+} 
+
+
+.btns label:nth-child(11){
+    border-right: none;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+.btns input[type="radio"]:checked{
+    background-color: #FF2423;
+    color: #fff;
+}
+
+
+.btns input[type="radio"]{
+    display: none;
+    border-radius: none;
+    background-color: black;
+}
+
+
+.btns input[type="radio"]{
+    width: 100px;
+    height: 100%;
+    background-color: aqua;
+   
+}
+
+
+#mio.anim{
+    animation: shake .5s ease;
+}
+
+
+
+@keyframes shake {
+    
+    to{
+      transform: translateX(-2px);
+    }
+
+    from{
+        transform: translateX(4px);
+    }
+
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .contain{
+        margin-top: 0px;
+    }
+         
+    #mangas h1{
+        padding-bottom: 0px;
+    }
+
+
+    .leftcontain p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .contain{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+        
+    .leftcontain{
+        width: 100%;
+        height: max-content;
+        margin-top: 0px;
+    }
+
+          
+    .rightcontain{
+        position: relative;
+        display: block;
+        align-self: center;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 900px){
+
+
+    .contain{
+        padding: 0px 0px;
+    }
+
+    .btns{
+        width: 90%;
+        
+    }
+
+    .btns label{
+        width: calc(100% / 6);
+    }
+
+    .leftcontain p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+        
+    #mangas h1{
+       
+        padding-bottom: 0px;
+    }
+
+    #mangas{
+        padding: 80px 80px 0px 80px ;
+        
+    }
+
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    .btns{
+        width: 100%;
+    }
+
+    .btns label{
+        width: calc(100% / 6);
+    }
+
+    .leftcontain p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    #mangas h1{
+        font-size: 30px;
+    }
+
+    #mangas{
+        padding: 70px 50px 0px 50px ;
+    }
+
+        
+    .rightcontain{
+        width: auto;
+        height: 300px;
+    }
+
+        
+    .rightcontain:before{
+        bottom: -150px;
+        left: -10px;
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .rightcontain:after{
+        bottom: -50px;
+        right: 30px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .btns label:hover{
+        opacity: 1 ;       
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px){
+
+
+        
+    .leftcontain span{
+        font-size: 10px;
+        
+    }
+
+    .leftcontain p{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .btns{        
+        height: 30px;
+    }
+
+    .btns label{
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #mangas{
+        padding: 70px 40px 0px 40px ;
+    }
+
+    #mangas h1{
+        font-size: 25px;
+    }
+
+    #tlt{
+        margin-top: 20px;
+    }
+
+           
+    .rightcontain{
+        width: auto;
+        height: 250px;
+
+    }
+
+    .rightcontain:before{      
+        bottom: -100px;
+        left: -10px;
+        width: 200px;
+        height: 200px;
+
+    }
+
+
+    .rightcontain:after{
+        bottom: -40px;
+        right: 30px;
+        width: 230px;
+        height: 230px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    .contain{
+        margin-top: 30px;
+    }
+
+        
+  
+
+    
+    #mangas{        
+        padding: 50px 40px 0px 40px ;
+        
+    }
+
+
+    .btns label{
+        height: 30px;
+        font-size: 10px;
+    }
+    
+
+    #mangas h1{
+        font-size: 22px;
+        padding-bottom: 0;
+    
+    }
+
+    /* .leftcontain{
+        margin-top: 5px;
+    } */
+
+    .leftcontain p{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+            
+    .rightcontain{
+        width: auto;
+        height: 200px;
+
+    }
+
+    .rightcontain:before{
+      
+        bottom: -80px;
+        left: -10px;
+        width: 150px;
+        height: 150px;
+
+    }
+
+
+    .rightcontain:after{
+        bottom: -30px;
+        right: 30px;
+        width: 180px;
+        height: 180px;
+    }
+
+}
