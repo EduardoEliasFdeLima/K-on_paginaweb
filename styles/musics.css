@@ -1,4 +1,3 @@
-
 #musics{
     padding: 60px 120px;
     position: relative;
@@ -42,12 +41,18 @@
     transition: .4s;
     overflow: hidden;
     z-index: 2;
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.3);
+    /* box-shadow: 0px 4px 6px 0px rgba(255,255,255,0.1); */
+    /* box-shadow: 0px 2px 1px 0px #898989 ; */
 }
 
 
 .boximage .main_image img{
     width: 100%;
     height: 100%;
+  
 }
 
 
@@ -106,7 +111,7 @@
 }
 
 .containlinks a{
-    padding: 10px;
+    padding: 8px;
     border: 3px solid #986F4F;
     text-decoration: none;
     color: #986F4F;
@@ -114,6 +119,7 @@
     font-weight: 500;
     transition: .5s ease;
     text-transform: uppercase;
+    /* font-size: 14px; */
 }
 
 
@@ -135,6 +141,18 @@
 }
 
 @media screen and (max-width: 1250px) {
+
+
+        
+    #musics h1{
+        padding-bottom: 10px;
+    }
+
+        
+    .containimgs{
+        margin-top: 70px;
+     
+    }
         
     .boxtext h3{
         font-size: 30px;
@@ -155,20 +173,20 @@
 
     .boximage{
         position: relative;
-        width: 380px;
-        height: 380px;
+        width: 370px;
+        height: 370px;
     }
 
         
     .boximage .second_image{
-        width: 230px;
-        height: 230px;
+        width: 220px;
+        height: 220px;
     }
 
         
     .boximage .main_image{
-        width: 330px;
-        height: 330px;
+        width: 320px;
+        height: 320px;
     }
 
 }
@@ -176,9 +194,14 @@
 
 @media screen and (max-width: 900px){
 
+    .containlinks a{
+        padding: 9px;
+        font-size: 14px;
+    }
+
 
     #musics{
-        padding: 150px 80px;
+        padding: 80px 80px;
         
     }
     
@@ -245,7 +268,7 @@
     
     #musics{
         padding: 70px 50px;
-        padding-bottom: 100px;
+        padding-bottom: 20px;
     }
 
     #musics h1{
@@ -287,6 +310,11 @@
         position: absolute;
         left: 35%;
         top: -40px;
+    }
+
+    .containlinks a{
+        padding: 8px;
+        font-size: 12px;
     }
         
 
@@ -332,8 +360,8 @@
 
         
     .containlinks a{
-        padding: 10px;
-        font-size: 15px;
+        padding: 8px;
+        font-size: 12px;
     }
 
 }
@@ -345,13 +373,10 @@
 
     .containimgs{
         margin-top: 70px;
-        
     }
-
     
     #musics{
         padding: 60px 35px;
-        padding-bottom: 100px;
         overflow: hidden;
     }
 
