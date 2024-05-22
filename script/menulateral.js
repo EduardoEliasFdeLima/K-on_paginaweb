@@ -10,17 +10,17 @@ $(document).ready(function(){
             $('#menu_lateral').removeClass('fa-bars');
             $('#menu_lateral').addClass('fa-x');
     
+    
             const menun = $('#menu_lateral');
-            menun.css('font-size', '20px');
-            menun.css('position', 'fixed');
-            menun.css('right', '20px');
-      
+            menun.css('font-size', '19px');
+            // menun.css('position', 'fixed');
+            menun.css('margin-top', '2px');
+            // menun.css('right', '22px');
             teste = 1;   
         
         }else{
           tirarmenu();
         }
-       
     });
 
     $('.txt_menu_lateral').on('click', function(){
@@ -43,7 +43,8 @@ $(document).ready(function(){
         const menun = $('#menu_lateral');
         menun.css('font-size', '22px');
         menun.css('position', 'relative');
-        menun.css('right', '0px');
+        menun.css('margin-top', '0px');
+        // menun.css('right', '0px');
     
         teste = 0;
     
