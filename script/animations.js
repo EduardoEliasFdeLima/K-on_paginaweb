@@ -72,8 +72,16 @@ ScrollReveal().reveal('.containimgs',{
     reset: true
 });
 
+ScrollReveal().reveal('.leftcontain',{
+    origin: 'right',
+    duration: 2000,
+    distance: '20%',
+    reset: true
+});
 
-ScrollReveal().reveal('.contain',{
+
+
+ScrollReveal().reveal('.rightcontain',{
     origin: 'right',
     duration: 2000,
     distance: '20%',
