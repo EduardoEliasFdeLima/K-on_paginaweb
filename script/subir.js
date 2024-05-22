@@ -15,6 +15,13 @@ jQuery(document).ready(function(){
         } else {
             jQuery('#subirTopo').fadeOut();
         }
+
+        
+        if (jQuery(this).scrollTop() > 40) {
+            jQuery('#gg').fadeOut();
+        }else{  
+            jQuery('#gg').fadeIn();
+        }
     });
 
             
