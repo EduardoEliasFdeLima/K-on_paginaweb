@@ -257,7 +257,7 @@
     .guia{
         position: relative;
         width: 100%;
-        padding: 120px 80px;
+        padding: 80px 80px 120px 80px;
     }
 
         
@@ -379,10 +379,11 @@
 
 @media screen and (max-width: 450px){
 
-    .guia{
-        padding: 80px 20px;
-    }
     
+    .guia{
+        padding: 60px 20px;
+    }
+
     .imgBack2{
         width: 140px;
         height: 200px;
