@@ -72,3 +72,11 @@ ScrollReveal().reveal('.containimgs',{
     reset: true
 });
 
+
+ScrollReveal().reveal('.contain',{
+    origin: 'right',
+    duration: 2000,
+    distance: '20%',
+    reset: true
+});
+
