@@ -34,6 +34,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 120px;
+    /* position: fixed;
+    background-color:  rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(25px); */
 }
 
 .menuTop img{
@@ -55,7 +62,6 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-
 
 .menuTop ul li a{
     text-decoration: none;
@@ -89,8 +95,6 @@
 }
 
 
-
-
 @keyframes blink {
     50%{
         transform: rotate(-5deg) translate(2px);
@@ -114,12 +118,10 @@
 
 .menu-mobile i{
     cursor: pointer;
-    transition: .5s;
 }
 
 #menu_lateral{
     display: none;
-    transition: 1s ease-in-out;
 }
 
 #musicfundo{
@@ -136,8 +138,7 @@
 
 
 @media screen and (max-width: 1200px){
-
-        
+    
     .menuTop{
         padding: 10px 90px;
     }
@@ -149,7 +150,6 @@
         width: 40%;
         font-size: 3rem;
         line-height: 60px;
-
     }
 
         
@@ -162,7 +162,6 @@
         font-size: 40px;
       
     }
-
         
     @keyframes bounce {
         0%{
@@ -174,8 +173,7 @@
         }
     }
 
-
-        
+       
     .menuTop ul li{
         margin-left: 20px;
         color: #fff;
@@ -184,8 +182,7 @@
         cursor: pointer;
     }
 
-    
-        
+            
     .menuTop img{
         width: 80px;
         height: 40px;
@@ -222,28 +219,26 @@
     .seti i{
         font-size: 30px;
     }
-
-
-
-        
+   
     .menuTop{
         padding: 10px 70px;
     }
 
     .txtsmenus{
-        background-color: rgba(152,111,79, .7);
+        background-color: rgba(0, 0, 0, 0.8);
         color: #fff;
         position: fixed;
-        padding: 50px 30px;
+        /* padding: 50px 30px 10px 30px; */   
+        padding: 100px 50px 60px 50px;
         top: 0;
         right: -100%;
         height: max-content;
         z-index: 3;
         transition: .7s ease;
-        border-left: 2px solid #000;
-        border-bottom: 2px solid #000;;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
         text-align: center;
-        border-radius: 0 0px 0px 20px;
+        border-radius: 0 0px 0px 10px;
        
     }
 
@@ -339,7 +334,8 @@
     }
 
     .txtsmenus{
-        padding: 100px 20px;
+        /* padding: 100px 20px 60px 20px; */
+        padding: 80px 40px 60px 40px;
         top: 0;
         right: -100%;
         text-align: center;
@@ -382,7 +378,7 @@
         line-height: 40px;
     }
 
-      
+        
     .seti i{
         bottom: 7%;
         font-size: 25px;
@@ -398,16 +394,11 @@
         }
     }
 
-
 }
-
-
 
 #musicfundo{
     display: none;
 }
-
-
 
 .fa-volume-low{
     transition: 1s ease;
