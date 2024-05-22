@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/generos.css">
     <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="styles/musics.css">
+    <link rel="stylesheet" href="styles/mangas.css">
     <link rel="stylesheet" href="styles/footer.css">
 
     <script src="script/music.js"></script>
@@ -43,6 +44,7 @@
                     <li><a href="#characters" class="txt_menu_lateral">Personagens</a></li>
                     <li><a href="#generos" class="txt_menu_lateral">Gêneros</a></li>
                     <li><a href="#musics" class="txt_menu_lateral">Músicas</a></li>
+                    <li><a href="#mangas" class="txt_menu_lateral">Mangás</a></li>
                     
                 </ul>
 
@@ -109,7 +111,7 @@
                                                 <h1>K-ON!</h1>
                                                 <h3>13 Episódios (24min)</h3>
                                                 <h4>Sinopse:</h4>
-                                                <p>Um novo ano de ensino médio sempre significa muito por vir, e uma dessas coisas é ingressar em um clube. Estando em um dilema sobre qual clube se juntar, Yui Hirasawa se depara e se candidata ao Clube de música leve, que ela interpreta erroneamente como tocando instrumentos simples, como castanholas. Incapaz de tocar um instrumento, ela decide visitar para pedir desculpas e sair.</p>
+                                                <p>Um novo ano de ensino médio sempre significa muito por vir, e uma dessas coisas é ingressar em um clube. Estando em um dilema sobre qual clube se juntar, Yui Hirasawa se depara e se candidata ao Clube de música clube, que ela interpreta erroneamente como tocando instrumentos simples, como castanholas. Incapaz de tocar um instrumento, ela decide visitar para pedir desculpas e sair.</p>
                                                 <p>Enquanto isso, o Keionbu enfrenta a dissolução devido à falta de membros. Isso faz com que os membros do clube ofereçam qualquer coisa, desde comida até relaxar durante o horário do clube, a fim de convencer Yui a se juntar. Apesar de seus esforços, Yui insiste em sair devido à sua falta de experiência musical. Como último recurso, elas tocam uma peça para Yui, que desperta sua paixão ardente e finalmente a convence a se juntar ao clube.</p>
                                                 <p>A partir de então, é simplesmente brincar enquanto praticam. Os membros do Light Music Club estão prontos para tornar seu tempo juntos um prazer!</p>
                                                 <h5>fonte: myanimelist</h5>
@@ -285,7 +287,7 @@
                             <div class="content-chatacters">
                                 <div class="content-chatacters-txt">
                                     <h2>Azusa Nakano</h2>
-                                    <p>Azusa é uma nova aluna no clube de música leve, sendo a guitarrista rítmica. Autoproclamada iniciante, toca guitarra desde nova. Seu comportamento é misterioso e ela fica perplexa com os eventos de chá e cosplay do clube, preferindo praticar. </p>
+                                    <p>Azusa é uma nova aluna no clube de música leve, sendo a guitarrista rítmica. Autoproclamada iniciante, toca guitarra desde a quarta série, vinda de uma família musical. Seu comportamento é misterioso e ela fica perplexa com os eventos de chá e cosplay do clube, preferindo praticar. </p>
                                     <p>Tem uma fraqueza por bolos e é facilmente acalmada, embora seja mais séria que as outras meninas e tenha dificuldade em expressar seus sentimentos. Apelidada de Azu-nyan após experimentar orelhas de gato, ela é constantemente abraçada por <a href="#s1" class="ll">Yui</a>.</p>
                                 </div>
                                 <div class="content-chatacters-img">
@@ -325,7 +327,7 @@
                     <div class="card light" id="card3">
                         <i class="fa-solid fa-guitar"></i>
                         <h4>Musical</h4>
-                        <p>Musical é um tema no qual músicas, danças, coreografia ou canções são predominantes na narrativa da história.</p>
+                        <p>Musical é um tema no qual músicas, danças, coreografia ou canções são predonimantes na narrativa da história.</p>
                     </div>
                     <div class="card light" id="card4">
                         <i class='bx bxs-school'></i>
@@ -357,7 +359,7 @@
         
                         <div class="containlinks">
                             <a href="https://open.spotify.com/intl-pt/album/2Vovb0iu4c35MP7EGgjdCN" onmouseover="change(2)" target="_blank">Trilha sonora <i class="fa-brands fa-spotify"></i></a>
-                            <a href="https://open.spotify.com/intl-pt/artist/1cXxia1Q2VDTjWe8X2Jydm" onmouseover="change(1)" target="_blank">Músicas HTT <i class="fa-brands fa-spotify"></i></a>
+                            <a href="https://open.spotify.com/intl-pt/artist/1cXxia1Q2VDTjWe8X2Jydm/discography/all" onmouseover="change(1)" target="_blank">Músicas HTT <i class="fa-brands fa-spotify"></i></a>
                         </div>
         
                     </div>
@@ -365,6 +367,44 @@
                 
                
             </section>
+
+
+
+            <section class="light2" id="mangas">
+                <h1>Volume dos Mangás</h1>
+
+
+                <div class="contain">
+                    <div class="leftcontain">
+                        <p>A obra atualmente possui seis volumes, sendo apenas os quatro primeiros adaptados para anime. O quinto e sexto volume mostra o que ocorre depois que o anime acaba, como a situação do clube e depois elas na faculdade.</p>
+                        <p>Todos os mangás possuem em média 120 páginas e é em estilo 4-koma, em que todas as página têm quatro quadrinhos que contam um pequeno acontecimento da história</p>
+                        <span>Selecione um dos volumes abaixo:</span>
+                        <div class="btns light">                 
+                                <label for="vol1" onclick="colorir(0)" id="volume1" class="volume">Vol. 1</label>
+                                <input type="radio" name="vol" id="vol1" value="vol1" checked>
+                                <label for="vol2" onclick="colorir(1)" id="volume2" class="volume">Vol. 2</label>
+                                <input type="radio" name="vol" id="vol2" value="vol2">
+                                <label for="vol3" onclick="colorir(2)" id="volume3" class="volume">Vol. 3</label>
+                                <input type="radio" name="vol" id="vol3" value="vol3">
+                                <label for="vol4" onclick="colorir(3)" id="volume4" class="volume">Vol. 4</label>
+                                <input type="radio" name="vol" id="vol4" value="vol4">
+                                <label for="vol5" onclick="colorir(4)" id="volume5" class="volume">Vol. 5</label>
+                                <input type="radio" name="vol" id="vol5" value="vol5">
+                                <label for="vol6" onclick="colorir(5)" id="volume6" class="volume">Vol. 6</label>
+                                <input type="radio" name="vol" id="vol6" value="vol6">    
+                                           
+                        </div>
+                        <div id=""><p id="tlt">K-on! | volume 1</p></div>
+                    </div>
+        
+                    <div class="rightcontain">
+                        <img id="mio" src="./src/images/mio_01.png" alt="">
+                    </div>
+                </div>
+        
+
+            </section>
+
     </main>
 
     <a id="subirTopo" class="dark">
@@ -373,9 +413,9 @@
 
 
 
-    <footer class="light2">
+    <footer class="light">
       <div class="final">
-            <div class="sqr light">
+            <!-- <div class="sqr light2"> -->
                 
             </div>
             <div class="txtfinals">
@@ -396,6 +436,7 @@
     <script src="script/darklightmode.js"></script>
     <script src="script/subir.js"></script>
     <script src="script/chanceimg.js"></script>
+    <script src="script/mangas.js"></script>
   
 
 </body>
