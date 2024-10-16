@@ -32,15 +32,18 @@
     padding-bottom: 30px;
     text-align: left;
     transition: .5s ease-in;
-    box-shadow: 2px 2px 5px #d3d2d2;
 }
 
 .card:hover{
     opacity: .2s;
     border-radius: 5px 20px 5px 5px;
-    /* background-color: #b68b69; */
-    /* color: #fff; */
-   
+}
+
+.card.light{
+    box-shadow: 2px 2px 5px #d3d2d2;
+}
+.card.dark{
+    box-shadow: 2px 2px 5px #1d1c1c;
 }
 
 .card i{
@@ -164,10 +167,6 @@
         font-size: 40px;
         padding-bottom: 40px;
         text-transform: uppercase;  
-    }
-
-    .card{
-        /* min-height: 230px; */
     }
 
     .card h4:nth-child(1){       
