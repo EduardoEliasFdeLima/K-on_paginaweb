@@ -319,6 +319,7 @@
     .ovalBG{
         background-image: url('https://i.imgur.com/053GoTp.jpeg');
         border-radius: 0 0px 0% 40%;
+        height: 100dvh;
     }
     
     .ovalBG h1{ 
@@ -367,6 +368,7 @@
 @media screen and (max-width: 400px) {
     .ovalBG{
         border-radius: 0 0px 0% 45%;
+        height: 100dvh;
     }
 
     .ovalBG h1{ 
